@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/Bloco.css">
+    <title>Validação</title>
+</head>
+<body>      
+        <!--FORMULÁRIO DE LOGIN-->
+        <div id="login">
+          <form method="post" action=""> 
+            <h1>Login</h1> 
+
+            <div class="container-corpo">
+            
+            <div class="logins">
+                <p> 
+                    <label for="nome_login" class="texto">Usuario</label>
+                <input id="nome_login" name="nome_login" required="required" type="text" placeholder="Digite seu login"/>
+                </p>
+                
+                <p> 
+                <label class="texto" for="box-senha">Senha</label>
+                <input id="box-senha" name="box-senha" required="required" type="password" placeholder="Digite sua senha" /> 
+                </p>
+            </div>
+
+            <div class="checkbox">
+                <p> 
+                <input type="checkbox" name="manterlogado" id="checar" value="" /> 
+                <label for="manterlogado">Manter-me logado</label>
+                </p>
+             </div>
+            </div>
+             <div class="button">
+                <p> 
+                <input type="submit" value="Logar" /> 
+                </p>
+             </div>
+
+             <div class="link">
+                <p>
+                Ainda não tem conta?
+                <a class="cadastro" href="#">Cadastre-se</a>
+                </p>
+             </div>
+          </form>
+        </div>
+
+    <script src="/Script/Valid.js"></script>
+</body>
+</html>

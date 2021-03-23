@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-image: url(/img/592367.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    position: relative;
+    height: 53vh;
+    width: 38vh;
+    display: flex;
+
+    flex-direction: column;
+    background: white;
+    border-radius: 1rem;
+}
+
+#login{
+    min-height: 100vh;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container-corpo {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    left: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+label.texto {
+   display: flex;
+   margin-bottom: 0.5rem;
+   font-size: 21px;
+}
+
+.container-corpo {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/*OS INPUTES*/
+
+#nome_login, #box-senha {
+    display: flex;
+    border-bottom: 1px solid #933ce2;
+    padding: 12px 0rem 0.5rem 27px;
+    border-radius: 2px;
+    text-align: initial;
+    margin-bottom: 1rem;
+    width: 15rem;
+}
+
+input[type="submit"] {
+    padding: 8px 7rem;
+    background: linear-gradient(to right, rgb(187 53 255), rgb(85 23 116));
+    color: white;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+input[type='text'] {
+    background-image: url(/img/usuario.png);
+    background-repeat: no-repeat;
+    background-position: 3px 9px;
+    background-size: 19px;
+}
+
+input[type='password'] {
+    background-image: url(/img/cadeado.png);
+    background-repeat: no-repeat;
+    background-position: 3px 9px;
+    background-size: 19px;
+}
+
+#nome_login::placeholder{
+    padding: 1rem 0;
+}
+
+.cadastro {
+    text-decoration: none;
+    color: #8712d0;
+    font-weight: bolder;
+}
