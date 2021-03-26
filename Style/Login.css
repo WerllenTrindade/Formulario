@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 :root {
-    --primary-color: #fd951f;
     --bg-color: #130f0d;
     --text-color: #f0f0f5;
     --light-color: rgba(255, 255, 255, 0.04);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: none;
+    font-family: 'Quicksand', sans-serif;
 }
+
 
 html {
     font-family: "Roboto", sans-serif;
@@ -21,32 +25,31 @@ html {
     align-items: center;
 }
 
+
 body{
     background-image: url(/img/592367.jpg);
     background-repeat: no-repeat;
-
 }
 
 form {
     background: white;
     margin: 32px auto;
-    padding: 2rem 4rem 4rem;
+    padding: 2rem 4rem 8rem;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     position: relative;
 }
 
-
-form h2{
-    margin-bottom: 2rem;
+form h1{
+    margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-h2:after {
+h1:after {
     content: ' ';
     display: block;
     width: 100%;
@@ -56,29 +59,26 @@ h2:after {
     background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
 }
 
-
 div.input {
     margin-bottom: 24px;
     position: relative;
-    
 }
 
-input {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    padding: 29px 0 2px 0;
-    border: none;
-    border-bottom: 1px solid #a750cc;
-    background-color: transparent;
-    outline: none;
-    color: #08080a;
-    font-size: 1em;
+.input input {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        padding: 29px 0 2px 0;
+        border: none;
+        border-bottom: 1px solid #a750cc;
+        background-color: transparent;
+        outline: none;
+        color: #08080a;
+        font-size: 1em;
+    }
 
-}
-
-button[type='submit'] {
+.button input {
     margin: 1rem 0;
     background: linear-gradient(to right, rgb(187 53 255), rgb(85 23 116));
     padding: 7px 7rem;
@@ -87,12 +87,11 @@ button[type='submit'] {
     font-size: 1rem;
     cursor: pointer;
     margin: 2rem 0px 15px;
-    outline: none;
 }
 
 .input label {
     position: absolute;
-    top: 5px;
+    top: 29px;
     left: 3px;
     color: black;
     transition: .4s;
@@ -105,30 +104,28 @@ input:valid ~ label {
     letter-spacing: 0.1em;
 }
 
-
-.input span.error {
-    display: flex;
-    
-    padding: 0;
-
-    background-color: rgba(255, 0, 0, 0.2);
+.checkbox {
+    position: relative;
+    right: 58px;
+    bottom: 0.5rem;
 }
 
-.input span.error.active {
-    border: 1px solid red;
-    padding: 0.4em;
+.cadastro {
+    color: rgb(103 20 235);
+    text-decoration: none;
+    cursor: pointer;
 }
 
+.link {
+    /* position: relative; */
+    position: absolute;
+    bottom: 1rem;
+    font-size: 17px;
+    font-weight: 500;
+}
 
 input[type='text'] {
     background-image: url(/img/usuario.png);
-    background-repeat: no-repeat;
-    background-position: 15rem 26px;
-    background-size: 19px;
-}
-
-input[type='email'] {
-    background-image: url(/img/o-email.png);
     background-repeat: no-repeat;
     background-position: 15rem 26px;
     background-size: 19px;
@@ -140,18 +137,23 @@ input[type='password'] {
     background-position: 15rem 25px;
     background-size: 22px;
 }
-.menu {
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid #c30cff2e;
-    margin-bottom: ;
-    width: 10rem;
-    position: absolute;
-    bottom: 2rem;
-    right: 7.5rem;
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
-.menu:hover{
-    color:rgba(176, 46, 209, 0.842);
-    font-size: 17px;
+.input span.error.active {
+    flex-direction: ce;
+    border: 1px red;
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 400;
+    border-radius: 1px 1px 6px 6px;
 }

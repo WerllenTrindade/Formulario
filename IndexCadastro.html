@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation with HTML API</title>
+
+  <link rel="stylesheet" href="Style/Cadastro.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+
+</head>
+
+<body>
+
+  <form action="">
+    <h2>
+      Crie sua conta
+    </h2>
+
+    <div class="input">
+      <input required type="text" />
+      <label>Nome</label>
+      <span class="error"></span>
+    </div>
+
+
+    <div class="input">
+      <input required type="email" />
+      <label>Email</label>
+      <span class="error"></span>
+    </div>
+
+    <div class="input">
+        <input required type="password" />
+        <label>Senha</label>
+        <span class="error"></span>
+      </div>
+    <div class="input">
+        <input required type="password" />
+        <label>Confirmar senha</label>
+        <span class="error"></span>
+      </div>
+
+    <button type="submit">Enviar</button>
+
+    <a class="menu" href="/index.html">Voltar menu principal</a>
+  </form>
+</body>
+    <script src="/Script/ValidCadastro.js"></script>
+</html>

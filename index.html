@@ -4,51 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Style/Bloco.css">
+    <link rel="stylesheet" href="/Style/Login.css">
     <title>Validação</title>
 </head>
 <body>      
         <!--FORMULÁRIO DE LOGIN-->
-        <div id="login">
-          <form method="post" action=""> 
+    <form action=""> 
             <h1>Login</h1> 
-
-            <div class="container-corpo">
-            
-            <div class="logins">
-                <p> 
-                    <label for="nome_login" class="texto">Usuario</label>
-                <input id="nome_login" name="nome_login" required="required" type="text" placeholder="Digite seu login"/>
-                </p>
+            <div class="input">
+                <input required type="text"/>
+                <label>Usuario</label>
+                <span class="error"></span>
+             </div>
                 
-                <p> 
-                <label class="texto" for="box-senha">Senha</label>
-                <input id="box-senha" name="box-senha" required="required" type="password" placeholder="Digite sua senha" /> 
-                </p>
-            </div>
+              <div class="input">
+                <input required type="password"> 
+                  <label>Senha</label>
+                  <span class="error"></span>
+             </div>
 
             <div class="checkbox">
-                <p> 
-                <input type="checkbox" name="manterlogado" id="checar" value="" /> 
-                <label for="manterlogado">Manter-me logado</label>
-                </p>
-             </div>
+                <input type="checkbox" name="manterlogado" value="" />
+                <label>Manter-me logado</label>
+                 
+
             </div>
+
              <div class="button">
-                <p> 
                 <input type="submit" value="Logar" /> 
-                </p>
              </div>
 
              <div class="link">
-                <p>
                 Ainda não tem conta?
-                <a class="cadastro" href="#">Cadastre-se</a>
-                </p>
+                <a class="cadastro" href="/IndexCadastro.html">Cadastre-se</a>
              </div>
-          </form>
-        </div>
+     </form>
 
-    <script src="/Script/Valid.js"></script>
+
+     <script src="/Script/ValidLogin.js"></script>
 </body>
 </html>
